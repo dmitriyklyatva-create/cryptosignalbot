@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/cryptosignalbot.egg-info/PKG-INFO
+src/cryptosignalbot.egg-info/SOURCES.txt
+src/cryptosignalbot.egg-info/dependency_links.txt
+src/cryptosignalbot.egg-info/requires.txt
+src/cryptosignalbot.egg-info/top_level.txt
+tests/test_indicators.py

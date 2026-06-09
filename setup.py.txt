@@ -1,0 +1,39 @@
+"""
+Setup script for CryptoSignalBot
+"""
+
+from setuptools import setup, find_packages
+
+with open("README.md", "r", encoding="utf-8") as fh:
+    long_description = fh.read()
+
+setup(
+    name='cryptosignalbot',
+    version='1.0.0',
+    author='ShiroNamakoto',
+    author_email='dmitriyklyatva@gmail.com',
+    description='AI-Powered Trading Signal Generator for Cryptocurrency',
+    long_description=long_description,
+    long_description_content_type='text/markdown',
+    url='https://github.com/yourusername/cryptosignalbot',
+    packages=find_packages(where='src'),
+    package_dir={'': 'src'},
+    classifiers=[
+        'Programming Language :: Python :: 3',
+        'License :: OSI Approved :: MIT License',
+        'Operating System :: OS Independent',
+        'Topic :: Office/Business :: Financial :: Investment',
+    ],
+    python_requires='>=3.7',
+    install_requires=[
+        'pandas>=1.3.0',
+        'numpy>=1.21.0',
+        'requests>=2.26.0',
+    ],
+    extras_require={
+        'dev': [
+            'pytest>=6.0',
+            'pytest-cov>=2.0',
+        ],
+    },
+)
